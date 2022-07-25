@@ -22,4 +22,18 @@ public:
 	{
 		m_miles = m_miles + miles;
 	}
+
+	// Constructor
+	Car(int year, int miles, string brand)
+	{
+		m_year = year;
+		m_miles = miles;
+		m_brand = brand;
+	}
+
+	// Destructor
+	~Car()
+	{
+		cout << "destructor!" << endl;
+	}
 };
