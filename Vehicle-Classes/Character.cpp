@@ -16,6 +16,9 @@ public:
 
 	}
 
+	// Pure virtual function
+	virtual void Draw() = 0;
+
 	void Move(int x, int y)
 	{
 		m_xPosition += x;

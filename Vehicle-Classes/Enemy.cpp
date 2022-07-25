@@ -13,7 +13,7 @@ public:
 
 	}
 
-	void Draw()
+	void Draw() override
 	{
 		std::cout << "*";
 	}
