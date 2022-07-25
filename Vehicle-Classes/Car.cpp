@@ -5,6 +5,7 @@ using namespace std;
 
 class Car
 {
+public:
 	// Member variables
 	int m_year;
 	int m_miles;

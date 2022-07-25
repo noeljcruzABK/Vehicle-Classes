@@ -4,9 +4,15 @@
 // Feel free to add any additional functionality to better simulate these vehicles!
 
 #include <iostream>
+#include "Car.cpp"
 using namespace std;
 
 int main()
 {
-    cout << "Hello World!\n";
+    Car myCar;
+    myCar.m_brand = "BMW";
+    myCar.m_year = 2019;
+    myCar.m_miles = 20;
+    myCar.Drive(10);
+    myCar.Display();
 }
