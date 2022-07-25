@@ -4,11 +4,25 @@ using namespace std;
 
 class Car
 {
+private:
+	int m_year;
+
 public:
 	// Member variables
-	int m_year;
 	int m_miles;
 	string m_brand;
+
+	// Setter
+	void SetYear(int newYear)
+	{
+		m_year = newYear;
+	}
+
+	// Getter
+	int GetYear()
+	{
+		return m_year;
+	}
 
 	// Member functions
 	void Display()
@@ -34,6 +48,6 @@ public:
 	// Destructor
 	~Car()
 	{
-		cout << "destructor!" << endl;
+
 	}
 };
