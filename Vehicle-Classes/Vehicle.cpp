@@ -28,3 +28,12 @@ public:
 		cout << "Buckle up! Time to hit the road." << endl;
 	}
 };
+
+class Airplane : Vehicle
+{
+public:
+	void Drive() override
+	{
+		cout << "Final boarding call! The runway is clear and we are ready to take off to the skies." << endl;
+	}
+};

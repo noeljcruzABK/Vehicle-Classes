@@ -77,6 +77,7 @@ void driveVehicle(int vehicle)
 		car.Drive();
 	}
 	if (vehicle == 3) {
-
+		Airplane plane;
+		plane.Drive();
 	}
 }
