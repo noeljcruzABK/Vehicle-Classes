@@ -4,7 +4,7 @@
 // Feel free to add any additional functionality to better simulate these vehicles!
 
 #include <iostream>
-#include "Boat.cpp"
+#include "Vehicle.cpp"
 using namespace std;
 
 bool promptSelection();
@@ -23,7 +23,7 @@ int main()
 	cout << "Have a safe trip!" << endl;
 }
 
-bool promptSelection() 
+bool promptSelection()
 {
 	int selection;
 
@@ -53,7 +53,7 @@ bool promptSelection()
 	return true;
 }
 
-void driveVehicle(int vehicle) 
+void driveVehicle(int vehicle)
 {
 	cout << "Are you all packed up and ready to go? (y/n):" << endl;
 	bool ready = false;
@@ -73,7 +73,8 @@ void driveVehicle(int vehicle)
 		boat.Drive();
 	}
 	if (vehicle == 2) {
-
+		Car car;
+		car.Drive();
 	}
 	if (vehicle == 3) {
 
