@@ -4,11 +4,11 @@
 // Feel free to add any additional functionality to better simulate these vehicles!
 
 #include <iostream>
-#include "Vehicle.cpp"
+#include "Boat.cpp"
 using namespace std;
 
 bool promptSelection();
-void driveVehicle();
+void driveVehicle(int vehicle);
 
 int main()
 {
@@ -20,11 +20,11 @@ int main()
 	while (!validSelection) {
 		validSelection = promptSelection();
 	}
-
 	cout << "Have a safe trip!" << endl;
 }
 
-bool promptSelection() {
+bool promptSelection() 
+{
 	int selection;
 
 	while (!(cin >> selection) || selection > 3 || selection < 1)
@@ -37,22 +37,24 @@ bool promptSelection() {
 	switch (selection) {
 	case 1:
 		cout << "You've selected to travel by Boat!" << endl;
-		driveVehicle();
-		return true;
+		driveVehicle(1);
+		break;
 	case 2:
 		cout << "You've selected to travel by Car!" << endl;
-		driveVehicle();
-		return true;
+		driveVehicle(2);
+		break;
 	case 3:
 		cout << "You've selected to travel by Airplane!" << endl;
-		driveVehicle();
-		return true;
+		driveVehicle(3);
+		break;
 	default:
 		return false;
 	}
+	return true;
 }
 
-void driveVehicle() {
+void driveVehicle(int vehicle) 
+{
 	cout << "Are you all packed up and ready to go? (y/n):" << endl;
 	bool ready = false;
 	string response;
@@ -64,5 +66,16 @@ void driveVehicle() {
 		}
 		else cout << "Don't worry, take your time." << endl;
 		cin.clear();
+	}
+
+	if (vehicle == 1) {
+		Boat boat;
+		boat.Drive();
+	}
+	if (vehicle == 2) {
+
+	}
+	if (vehicle == 3) {
+
 	}
 }
